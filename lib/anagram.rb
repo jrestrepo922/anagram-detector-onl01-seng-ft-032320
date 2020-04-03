@@ -13,6 +13,7 @@ class Anagram
       anagram_array << anagram_word
     else
       anagram_array
+    end 
   end 
   
 end 
