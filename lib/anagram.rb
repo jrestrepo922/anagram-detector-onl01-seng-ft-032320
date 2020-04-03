@@ -7,13 +7,13 @@ class Anagram
   end 
   
   def match(array_of_words)
-    anagram_word = array_of_words.collect { |word| word.split("").sort == @word.split("").sort }
-    anagram_array = []
-    if anagram_word
-      anagram_array << anagram_word
-    else
-      anagram_array
-    end 
+    anagram_array = array_of_words.collect { |word|
+      if word.split("").sort == @word.split("").sort 
+        word
+      end 
+    }
+    
+    anagram_array.reject { |word| word == nil}
   end 
   
 end 
