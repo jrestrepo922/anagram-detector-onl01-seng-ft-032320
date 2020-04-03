@@ -9,6 +9,7 @@ class Anagram
   def match(array_of_words)
     anagram_word = array_of_words.find { |word| word.split("").sort == word_provided.split("").sort }
     
-    an
+    anagram_array = []
+    anagram_array << anagram_word
   end 
 end 
